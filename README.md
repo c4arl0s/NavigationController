@@ -3,6 +3,33 @@
 NavigationController
 
 ``` objective-c
+#import "AppDelegate.h"
+#import "BIDFirstLevelViewController.h"
+
+@interface AppDelegate ()
+
+@end
+
+@implementation AppDelegate
+
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // override point for customization after application launch.
+    BIDFirstLevelViewController *firstLevelViewController = [[BIDFirstLevelViewController alloc] init];
+    firstLevelViewController.view.backgroundColor = [UIColor redColor];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:firstLevelViewController];
+    self.window.rootViewController = navigationController;
+    self.window.backgroundColor = [UIColor redColor];
+    [self.window makeKeyAndVisible];
+    return YES;
+}
+```
+
+# AppDelegate
+
+``` objective-c
 //
 //  AppDelegate.m
 //  NavigationControllerByCode
