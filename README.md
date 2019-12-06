@@ -1,5 +1,7 @@
 # NavigationController and TableViews in Objective-C
 
+![Screen Shot 2019-12-06 at 13 52 20](https://user-images.githubusercontent.com/24994818/70351961-b35d7f00-182f-11ea-89a1-045052493cdf.png)
+
 # Creating the Top–Level View Controller
 
 ``` objective-c
